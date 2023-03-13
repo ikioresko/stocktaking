@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.UUID;
 
-public class ConsignmentDto {
+public class InvoiceDto {
     private UUID consignmentId;
     private UUID senderId;
     private UUID recipientId;
@@ -16,7 +16,7 @@ public class ConsignmentDto {
     private UUID stateId;
     private List<UUID> equipmentsId = new ArrayList<>();
 
-    public ConsignmentDto() {
+    public InvoiceDto() {
     }
 
     public UUID getSenderId() {
@@ -99,7 +99,7 @@ public class ConsignmentDto {
         if (o == null || getClass() != o.getClass()) {
             return false;
         }
-        ConsignmentDto that = (ConsignmentDto) o;
+        InvoiceDto that = (InvoiceDto) o;
         return Objects.equals(consignmentId, that.consignmentId);
     }
 
